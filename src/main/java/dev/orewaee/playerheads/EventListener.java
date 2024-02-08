@@ -1,5 +1,6 @@
 package dev.orewaee.playerheads;
 
+import dev.orewaee.playerheads.utils.Utils;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
@@ -13,7 +14,7 @@ public class EventListener implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) {
         Player player = event.getPlayer();
 
-        ItemStack head = Utils.getPlayerHead(player);
+        ItemStack head = Utils.getHead(player, 1);
 
         Location location = player.getLocation();
         World world = player.getWorld();

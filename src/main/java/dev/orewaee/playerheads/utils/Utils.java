@@ -1,4 +1,4 @@
-package dev.orewaee.playerheads;
+package dev.orewaee.playerheads.utils;
 
 import com.destroystokyo.paper.profile.PlayerProfile;
 import org.bukkit.Bukkit;
@@ -8,12 +8,10 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 
 public class Utils {
-    public static ItemStack getPlayerHead(Player player) {
-        String name = player.getName();
-
+    public static ItemStack getHead(String name, int quantity) {
         PlayerProfile profile = Bukkit.createProfile(name);
 
-        ItemStack item = new ItemStack(Material.PLAYER_HEAD, 1);
+        ItemStack item = new ItemStack(Material.PLAYER_HEAD, quantity);
 
         SkullMeta meta = (SkullMeta) item.getItemMeta();
         meta.setPlayerProfile(profile);
@@ -21,5 +19,11 @@ public class Utils {
         item.setItemMeta(meta);
 
         return item;
+    }
+
+    public static ItemStack getHead(Player player, int quantity) {
+        String name = player.getName();
+
+        return getHead(name, quantity);
     }
 }

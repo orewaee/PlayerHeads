@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:$paperApiVersion")
+    // compileOnly("io.papermc.paper:paper-api:$paperApiVersion")
     compileOnly("dev.folia:folia-api:$foliaApiVersion")
 }
 

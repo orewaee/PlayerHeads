@@ -1,6 +1,9 @@
 name: PlayerHeads
-version: 0.1.0
+version: 0.1.1
 api-version: 1.20
 main: dev.orewaee.playerheads.PlayerHeads
 folia-supported: true
 author: orewaee
+commands:
+    playerheads:
+        description: "Command for working with the plugin"
