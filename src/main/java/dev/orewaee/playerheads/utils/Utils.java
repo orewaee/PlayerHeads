@@ -1,11 +1,12 @@
 package dev.orewaee.playerheads.utils;
 
-import com.destroystokyo.paper.profile.PlayerProfile;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
+
+import com.destroystokyo.paper.profile.PlayerProfile;
 
 public class Utils {
     public static ItemStack getHead(String name, int quantity) {

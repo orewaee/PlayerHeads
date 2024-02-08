@@ -1,9 +1,10 @@
 package dev.orewaee.playerheads.commands;
 
-import org.bukkit.Bukkit;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
@@ -37,23 +38,5 @@ public class GetTabCompleter implements TabCompleter {
 
             default -> List.of();
         };
-
-        /*
-        if (args.length == 2) {
-            List<String> names = new ArrayList<>();
-
-            for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-                String onlinePlayerName = onlinePlayer.getName();
-
-                if (onlinePlayerName.equals(playerName)) continue;
-
-                names.add(onlinePlayerName);
-            }
-
-            return names;
-        }
-
-        return List.of();
-        */
     }
 }
